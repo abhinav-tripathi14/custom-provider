@@ -10,3 +10,8 @@ terraform {
 provider "azurerm" { 
   # Configuration options 
 }
+
+resource "azurerm_resource_group" "rg" {
+  name     = "example-resources-test"
+location = "East US"
+}
