@@ -1,8 +1,12 @@
 terraform {
   required_providers {
-    myprovider = {
-      source = "app.terraform.io/Test-Abhinav/myprovider"
-      version = "0.1.0"
+    azurerm = {
+      source = "app.terraform.io/Test-Abhinav/azurerm"
+      version = "3.46.0"
     }
   }
+}
+
+provider "azurerm" { 
+  # Configuration options 
 }
